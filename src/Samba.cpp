@@ -664,6 +664,12 @@ Samba::reset(void)
     case ATSAMD21G18A_CHIPID:
     case ATSAMD21E18A_CHIPID:
     case ATSAMR21E18A_CHIPID:
+	case ATSAMR34J18B_CHIPID:
+	case ATSAMR34J17B_CHIPID:
+	case ATSAMR34J16B_CHIPID:
+	case ATSAMR35J18B_CHIPID:
+	case ATSAMR35J17B_CHIPID:
+	case ATSAMR35J16B_CHIPID:
         // http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.ddi0484c/index.html
         writeWord(0xE000ED0C, 0x05FA0004);
         break;

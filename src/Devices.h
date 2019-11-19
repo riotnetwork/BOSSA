@@ -81,5 +81,73 @@
 #define ATSAMR21E18A_STACK_ADDR              (0x20008000ul)
 #define ATSAMR21E18A_NVMCTRL_BASE            (0x41004000ul)
 
+/*SAMR34 (SAML21 + LoRa with USB )*/
 
+#define ATSAMR34J18B_NAME                    "ATSAMR34J18B"
+#define ATSAMR34J18B_CHIPID                  (0x10810028cul)  // DIE & REV bitfields masked in Samba::chipId()
+#define ATSAMR34J18B_FLASH_BASE              (0x00000000ul + ATSAMR_BOOTLOADER_SIZE)
+#define ATSAMR34J18B_FLASH_PAGE_SIZE         (64ul)
+#define ATSAMR34J18B_FLASH_PAGES             (4096ul)
+#define ATSAMR34J18B_FLASH_PLANES            (1ul)
+#define ATSAMR34J18B_FLASH_LOCK_REGIONS      (16ul)
+#define ATSAMR34J18B_BUFFER_ADDR             (0x20004000ul)
+#define ATSAMR34J18B_STACK_ADDR              (0x20008000ul)
+#define ATSAMR34J18B_NVMCTRL_BASE            (0x41004000ul)
+
+#define ATSAMR34J17B_NAME                    "ATSAMR34J17B"
+#define ATSAMR34J17B_CHIPID                  (0x10810029cul)  // DIE & REV bitfields masked in Samba::chipId()
+#define ATSAMR34J17B_FLASH_BASE              (0x00000000ul + ATSAMR_BOOTLOADER_SIZE)
+#define ATSAMR34J17B_FLASH_PAGE_SIZE         (64ul)
+#define ATSAMR34J17B_FLASH_PAGES             (2048ul)
+#define ATSAMR34J17B_FLASH_PLANES            (1ul)
+#define ATSAMR34J17B_FLASH_LOCK_REGIONS      (16ul)
+#define ATSAMR34J17B_BUFFER_ADDR             (0x20004000ul)
+#define ATSAMR34J17B_STACK_ADDR              (0x20008000ul)
+#define ATSAMR34J17B_NVMCTRL_BASE            (0x41004000ul)
+
+#define ATSAMR34J16B_NAME                    "ATSAMR34J16B"
+#define ATSAMR34J16B_CHIPID                  (0x1081002Acul)  // DIE & REV bitfields masked in Samba::chipId()
+#define ATSAMR34J16B_FLASH_BASE              (0x00000000ul + ATSAMR_BOOTLOADER_SIZE)
+#define ATSAMR34J16B_FLASH_PAGE_SIZE         (64ul)
+#define ATSAMR34J16B_FLASH_PAGES             (1024ul)
+#define ATSAMR34J16B_FLASH_PLANES            (1ul)
+#define ATSAMR34J16B_FLASH_LOCK_REGIONS      (16ul)
+#define ATSAMR34J16B_BUFFER_ADDR             (0x20004000ul)
+#define ATSAMR34J16B_STACK_ADDR              (0x20008000ul)
+#define ATSAMR34J16B_NVMCTRL_BASE            (0x41004000ul)
+
+/*SAMR35 (SAML21 +  LoRa, no USB ) */
+
+#define ATSAMR35J18B_NAME                    "ATSAMR35J18B"
+#define ATSAMR35J18B_CHIPID                  (0x1081002Bcul)  // DIE & REV bitfields masked in Samba::chipId()
+#define ATSAMR35J18B_FLASH_BASE              (0x00000000ul + ATSAMR_BOOTLOADER_SIZE)
+#define ATSAMR35J18B_FLASH_PAGE_SIZE         (64ul)
+#define ATSAMR35J18B_FLASH_PAGES             (4096ul)
+#define ATSAMR35J18B_FLASH_PLANES            (1ul)
+#define ATSAMR35J18B_FLASH_LOCK_REGIONS      (16ul)
+#define ATSAMR35J18B_BUFFER_ADDR             (0x20004000ul)
+#define ATSAMR35J18B_STACK_ADDR              (0x20008000ul)
+#define ATSAMR35J18B_NVMCTRL_BASE            (0x41004000ul)
+
+#define ATSAMR35J17B_NAME                    "ATSAMR35J17B"
+#define ATSAMR35J17B_CHIPID                  (0x1081002Ccul)  // DIE & REV bitfields masked in Samba::chipId()
+#define ATSAMR35J17B_FLASH_BASE              (0x00000000ul + ATSAMR_BOOTLOADER_SIZE)
+#define ATSAMR35J17B_FLASH_PAGE_SIZE         (64ul)
+#define ATSAMR35J17B_FLASH_PAGES             (2048ul)
+#define ATSAMR35J17B_FLASH_PLANES            (1ul)
+#define ATSAMR35J17B_FLASH_LOCK_REGIONS      (16ul)
+#define ATSAMR35J17B_BUFFER_ADDR             (0x20004000ul)
+#define ATSAMR35J17B_STACK_ADDR              (0x20008000ul)
+#define ATSAMR35J17B_NVMCTRL_BASE            (0x41004000ul)
+
+#define ATSAMR35J16B_NAME                    "ATSAMR35J16B"
+#define ATSAMR35J16B_CHIPID                  (0x1081002Dcul)  // DIE & REV bitfields masked in Samba::chipId()
+#define ATSAMR35J16B_FLASH_BASE              (0x00000000ul + ATSAMR_BOOTLOADER_SIZE)
+#define ATSAMR35J16B_FLASH_PAGE_SIZE         (64ul)
+#define ATSAMR35J16B_FLASH_PAGES             (1024ul)
+#define ATSAMR35J16B_FLASH_PLANES            (1ul)
+#define ATSAMR35J16B_FLASH_LOCK_REGIONS      (16ul)
+#define ATSAMR35J16B_BUFFER_ADDR             (0x20004000ul)
+#define ATSAMR35J16B_STACK_ADDR              (0x20008000ul)
+#define ATSAMR35J16B_NVMCTRL_BASE            (0x41004000ul)
 #endif // _DEVICES_H_
