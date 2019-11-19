@@ -14,17 +14,20 @@ OS=`uname -s | cut -c -7`
 if [[ x$OS == xDarwin ]];
 then
 	# OSX
+	echo Making bossac for OSX
 	make bin/bossac -j4
 	strip bin/bossac
 	GCC_ARCH=`gcc -v -arch i386 2>&1 | awk '/Target/ { print $2 }'`
 elif [[ x$OS == xMINGW32 ]];
 then
 	# Windows
+	echo Making bossac for Windows
 	make bin/bossac.exe -j4
 	strip --strip-all bin/bossac.exe
 	GCC_ARCH=`gcc -v 2>&1 | awk '/Target/ { print $2 }'`
 else
 	# Linux
+	echo Making bossac for Linux
 	make bin/bossac -j4
 	strip --strip-all bin/bossac
 	GCC_ARCH=`gcc -v 2>&1 | awk '/Target/ { print $2 }'`
@@ -36,4 +39,3 @@ cd arduino
 tar cfz bossac-$VERSION-$GCC_ARCH.tar.gz bossac-$VERSION
 cd ..
 rm -r "arduino/bossac-$VERSION"
-

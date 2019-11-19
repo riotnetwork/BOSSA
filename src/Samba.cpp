@@ -180,8 +180,18 @@ Samba::init()
     // NOTE: 0x1001000a is a ATSAMD21E18A, 0x1001001c is ATSAMR21E18A
 	else if (cid == 0x10010000 || cid == 0x10010100 || cid == 0x10010005 || cid == 0x1001000a || cid == 0x1001001c)
     {
+		if (_debug)
+			printf("Found ATSAMD21 series\n");
         return true;
     }
+	// Check for supported M0+ processor SAMR34 and R35 series
+	// NOTE: 0x10810028ul is a ATSAMR34J18B.. as in Devices.h
+	else if (cid == ATSAMR34J18B_CHIPID || cid == ATSAMR34J17B_CHIPID || cid == ATSAMR34J16B_CHIPID || cid == ATSAMR35J18B_CHIPID || cid == ATSAMR35J17B_CHIPID || cid == ATSAMR35J16B_CHIPID)
+	{
+		if (_debug)
+			printf("Found SAMR LoRa series\n");
+		return true;
+	}
     else
     {
         if (_debug)
