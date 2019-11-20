@@ -68,6 +68,9 @@ public:
         FAMILY_SAMR21,
         FAMILY_SAML21,
 
+		FAMILY_SAMR34,
+		FAMILY_SAMR35,
+
         FAMILY_SAMD51,
         FAMILY_SAME51,
         FAMILY_SAME53,

@@ -493,6 +493,42 @@ Device::create()
             flashPtr = new D2xNvmFlash(_samba, "ATSAMR21x19", 4096, 64, 0x20004000, 0x20008000) ;
             break;
 
+			//
+	   // SAMR34
+	   //
+		case 0x10810028: // 34J18
+			_family = FAMILY_SAMR34;
+			flashPtr = new D2xNvmFlash(_samba, "ATSAMR34J18", 4096, 64, 0x20004000, 0x20008000);
+			break;
+
+		case 0x10810029: // 34J17
+			_family = FAMILY_SAMR34;
+			flashPtr = new D2xNvmFlash(_samba, "ATSAMR34J17", 2048, 64, 0x20002000, 0x20004000);
+			break;
+
+		case 0x1081002A: // 34J16
+			_family = FAMILY_SAMR34;
+			flashPtr = new D2xNvmFlash(_samba, "ATSAMR34J16", 1024, 64, 0x20001000, 0x20002000);
+			break;
+
+		//
+	   // SAMR35
+	   //
+		case 0x1081002B: // 35J18
+			_family = FAMILY_SAMR35;
+			flashPtr = new D2xNvmFlash(_samba, "ATSAMR35J18", 4096, 64, 0x20004000, 0x20008000);
+			break;
+
+		case 0x1081002C: // 35J17
+			_family = FAMILY_SAMR35;
+			flashPtr = new D2xNvmFlash(_samba, "ATSAMR35J17", 2048, 64, 0x20002000, 0x20004000);
+			break;
+
+		case 0x1081002D: // 35J16
+			_family = FAMILY_SAMR35;
+			flashPtr = new D2xNvmFlash(_samba, "ATSAMR35J16", 1024, 64, 0x20001000, 0x20002000);
+			break;
+
         //
         // SAML21
         //
